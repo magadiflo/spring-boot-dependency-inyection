@@ -1,5 +1,6 @@
 package com.bolsadeideas.springboot.di.app.models.service;
 
+import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Component;
 //import org.springframework.stereotype.Service;
 
@@ -12,12 +13,13 @@ import org.springframework.stereotype.Component;
  */
 
 //@Service
+@Primary //Indica que esta clase será la que se inyectará por defecto
 @Component("miServicioSimple") //Se le puede poner un nombre
 public class MiServicio implements IServicio {
 
 	@Override
 	public String operacion() {
-		return "Ejecutando algún proceso importante...";
+		return "Ejecutando algún proceso importante simple...";
 	}
 
 }

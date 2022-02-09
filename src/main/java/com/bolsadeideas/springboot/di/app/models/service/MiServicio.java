@@ -13,13 +13,13 @@ import org.springframework.stereotype.Component;
  */
 
 //@Service
-@Primary //Indica que esta clase será la que se inyectará por defecto
-@Component("miServicioSimple") //Se le puede poner un nombre
+//@Primary //Indica que esta clase será la que se inyectará por defecto
+//@Component("miServicioSimple") //Se le puede poner un nombre
 public class MiServicio implements IServicio {
 
 	@Override
 	public String operacion() {
-		return "Ejecutando algún proceso importante simple...";
+		return "Ejecutando algún proceso importante simple :')...";
 	}
 
 }

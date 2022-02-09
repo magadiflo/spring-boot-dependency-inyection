@@ -25,6 +25,10 @@ public class ItemFactura {
 	public void setCantidad(Integer cantidad) {
 		this.cantidad = cantidad;
 	}
+	
+	public Integer calculaImporte() {
+		return this.getCantidad() * this.producto.getPrecio();
+	}
 
 	@Override
 	public String toString() {

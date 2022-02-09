@@ -32,13 +32,13 @@ public class AppConfig {
 
 	@Bean("itemsFactura")
 	public List<ItemFactura> registrarItems() {
-		Producto p1 = new Producto("Monitor LG", 750);
-		Producto p2 = new Producto("Teclado Micronics", 54);
-		Producto p3 = new Producto("Bocina Pc", 35);
+		Producto p1 = new Producto("Monitor LG", 770);
+		Producto p2 = new Producto("Teclado Micronics", 67);
+		Producto p3 = new Producto("Bocina Pc", 77);
 
-		ItemFactura item1 = new ItemFactura(p1, 2);
-		ItemFactura item2 = new ItemFactura(p2, 4);
-		ItemFactura item3 = new ItemFactura(p3, 3);
+		ItemFactura item1 = new ItemFactura(p1, 27);
+		ItemFactura item2 = new ItemFactura(p2, 73);
+		ItemFactura item3 = new ItemFactura(p3, 67);
 
 		return Arrays.asList(item1, item2, item3);
 	}

@@ -15,6 +15,7 @@ public class Factura {
 	@Autowired
 	private Cliente cliente;
 
+	@Autowired //Se está inyectando del AppConfig.java, método registrarItems()
 	private List<ItemFactura> items;
 
 	public String getDescripcion() {
